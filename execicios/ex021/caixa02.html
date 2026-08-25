@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(139, 125, 107);
+            margin: 0px;
+        }
+        header {
+            background-color: rgb(255, 255, 255);
+            padding: 10px;
+            margin: 10px;
+        }
+        main {
+            background-color: rgb(255, 255, 255);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 10px;
+            box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.356);
+        }
+        footer {
+            background-color: rgb(34, 34, 34);
+            color: rgb(218, 218, 218);
+            margin: 0px;
+            padding: 4px;
+            text-align: center;
+        }
+        footer > p {
+            margin: 0px;
+        }
+        article {
+            background-color: lightgray;
+            padding: 5px;
+        }
+        article > aside {
+            background-color: rgb(115, 115, 115);
+        }
+        nav {
+            background-color: rgb(89, 89, 89);
+            padding: 3px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.315);
+        }
+        nav > a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        nav > a:hover {
+            text-decoration: underline;
+        }
+        div#bola {
+            height: 100px;
+            width: 100px;
+            margin: 15px;
+            background-color: white;
+            border-radius: 50%
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="noticias">
+            <article>
+                <h2>Artigos sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda minus possimus, quisquam laborum vitae rem et quod corporis repudiandae, consequatur, quaerat veritatis sapiente animi corrupti porro magnam minima distinctio delectus.</p>
+                <aside>
+                    <p>Artigo escrito por josé da silva</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>desenvolvido por Rodrigo.</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

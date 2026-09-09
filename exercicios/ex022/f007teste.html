@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratica do fundo007</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        main {
+            background: url(imagens/1325121.png) center center no-repeat fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        #conteiner {
+            background-image: url(imagens/torii-gate-.jpg);
+            background-size: 100% 100%;
+
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            border: 5px;
+            border-radius: 30px;
+            width: 700px;
+            height: 100vh;
+
+            margin: 0px auto 50px 50px;
+        }
+
+        #conteudo {
+            background-image: url(imagens/fundo-texto.jpg);
+            background-size: 100% 100%;
+
+            position: absolute;
+            height: 200px;
+            width: 400px;
+
+            left: 50%;
+            top: 10%;
+
+            transform: translate(-50%);
+            -webkit-mask-image: radial-gradient(circle, black 80%, transparent 100%);
+            mask-image: radial-gradient(circle, black 80%, transparent 100%);
+        
+        }
+
+        #complemento {
+            background-image: url(imagens/gadevoir.jpg);
+            background-size: 100% 100%;
+
+            position: relative;
+            background-size: cover;
+            margin: 0px 40px;
+            border: 5px;
+            border-radius: 10px;
+            height: 500px;
+            width: 300px;
+
+            -webkit-mask-image: radial-gradient(circle, black 70%, transparent 100%);
+            mask-image: radial-gradient(circle, black 70%, transparent 100%);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section id="conteiner">
+            <article id="conteudo">
+                <h1>
+                    um poema solitario
+                </h1>
+                <p>
+                    dias acordo, levanto, ando, olho o e reflito indo para o trampo. Dias choro, acordo, e em vez de mudar o que me reduz, cedo e nunca vejo a luz.
+                </p>
+            </article>
+        </section>
+        <aside id="complemento">
+
+        </aside>
+    </main>
+</body>
+</html>

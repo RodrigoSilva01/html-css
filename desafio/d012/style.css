@@ -1,1 +1,61 @@
 @charset "utf-8";
+
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: black;
+    padding-top: 50px;
+    color: white;
+    text-align: center;
+}
+
+section {
+    background-color: white;
+    margin: 0;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 5vh;
+
+    box-sizing: border-box;
+}
+
+section.imagem {
+    color: white;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.imagem > p {
+    background-color: #0000008b;
+    max-width: 500px;
+
+}
+
+#img01 {
+    background-image: url(imagens/background001.jpg);
+}
+
+#img02 {
+    background-image: url(imagens/background002.jpg);
+}
+
+p {
+    margin-bottom: 15px;
+    font-size: 40px;
+    line-height: 1.5;
+}
+
+footer {
+    text-align: center;
+    color: white;
+}
+
+a {
+    color: white;
+}

@@ -1,61 +1,97 @@
 @charset "utf-8";
 
-body {
-    background-color: black;
-    margin: 0;
-    padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: "Passion One", sans-serif;
+    --font3: "Sriracha", cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+html, body {
+    font-family: var(--fonte1);
+    min-height: 100vh;
+    background-color: darkgrey;
 }
 
 header {
     background-color: black;
-    padding-top: 50px;
     color: white;
     text-align: center;
 }
 
+header > h1 {
+    font-family: var(--fonte2);
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-size: 10vw;
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 section {
-    background-color: white;
-    margin: 0;
+    font-family: var(--font3);
+    font-size: 3.5vw;
     padding-top: 10vh;
     padding-bottom: 10vh;
-    padding-left: 5vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
 
-    box-sizing: border-box;
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.282);
+    width: 400px;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
 }
 
 section.imagem {
+    background-color: rgb(38, 38, 38);
     color: white;
+}
+
+#img01 {
+    background-image: url(imagens/background001.jpg);
     background-position: right center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
 
-.imagem > p {
-    background-color: #0000008b;
-    max-width: 500px;
-
-}
-
-#img01 {
-    background-image: url(imagens/background001.jpg);
-}
-
 #img02 {
     background-image: url(imagens/background002.jpg);
-}
-
-p {
-    margin-bottom: 15px;
-    font-size: 40px;
-    line-height: 1.5;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 footer {
     text-align: center;
-    color: white;
-}
-
-a {
+    background-color: black;
+    padding: 10px;
     color: white;
 }
